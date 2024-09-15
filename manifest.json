@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "URL Blocker Extension",
+	"description": "Base Level Extension",
+	"version": "1.0",
+	"action": {
+	  "default_popup": "index.html",
+	  "default_icon": "./icons/icon.png"
+	},
+	"content_scripts": [
+      {
+        "matches": [
+          "https://www.facebook.com/*",
+          "https://www.netflix.com/*",
+		  "https://www.instagram.com/*"
+        ],
+        "css": [
+          "css/style.css"
+        ]
+      }
+  	]
+}
