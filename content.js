@@ -1,8 +1,13 @@
 const generateStyle = () => {
 	return `<style>
 		html {
-			background-color: #ff0000;
-		}</style>
+  			background: rgb(201, 226, 221 );
+  			display: flex;
+		}
+		.center-screen {
+  			margin:auto;
+		}
+		</style>
 	`;
 };
 
@@ -14,13 +19,14 @@ const generateHTML = () => {
 			<meta charset="UTF-8">
 			<title>Bricked</title>
 		</head>
-
-		<body>
-			<h1>You got bricked</h1>
-		</body>
+		<div class="center-screen">
+			<body>
+				<h1>This website is bricked.</h1>
+			</body>
+		</div>
 		</html>
 	 `;
 };
 
-document.body.innerHTML = generateHTML();
 document.head.innerHTML = generateStyle();
+document.body.innerHTML = generateHTML();
